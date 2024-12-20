@@ -34,3 +34,34 @@ This repository contains an end-to-end application developed to predict student 
 ---
 
 ## 📂 **Project Structure**
+student-performance-prediction/ ├── app/ # Flask application files ├── data/ # Dataset for training and testing ├── notebooks/ # EDA and model development notebooks ├── models/ # Trained machine learning models ├── static/ # Static files for the web app (CSS, JS) ├── templates/ # HTML templates for Flask ├── requirements.txt # Python dependencies ├── Dockerfile # Docker configuration for deployment └── README.md # Project documentation
+
+
+---
+
+## 🛠️ **Technologies Used**
+- **Programming Languages**: Python
+- **Libraries**: Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn, Flask
+- **Deployment**: AWS (Elastic Beanstalk, CodePipeline), GitHub Actions
+- **Version Control**: Git
+
+---
+
+## 📈 **Key Results**
+- **Linear Regression** emerged as the best model with an RMSE value achieving 88% accuracy.
+- Significant insights into the factors influencing student performance were derived through EDA.
+
+---
+
+## 💻 **Getting Started**
+### **Prerequisites**
+- Python 3.8+
+- AWS account
+- Docker (optional for containerized deployment)
+
+### **Installation**
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/student-performance-prediction.git
+   cd student-performance-prediction
+
