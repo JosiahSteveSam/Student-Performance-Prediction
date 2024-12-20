@@ -1,67 +1,39 @@
-# 📊 Student Performance Prediction
+# 📊 **Student Performance Prediction**
 
-This repository contains an end-to-end application developed to predict student performance in math scores based on various attributes. The project aims to provide insights into how factors like demographics, parental education, and preparation impact academic performance, and leverages machine learning for predictive analysis.
-
----
-
-## 🚀 **Features**
-- **End-to-End Workflow**: Clean modular code structure to ensure scalability and maintainability.
-- **Exploratory Data Analysis (EDA)**: Identified patterns and relationships between attributes.
-- **Feature Engineering**: Applied:
-  - One-hot encoding for categorical variables.
-  - Standard scaling to normalize numerical data.
-- **Machine Learning**:
-  - Experimented with various algorithms.
-  - Performed hyperparameter tuning.
-  - Achieved **88% accuracy** with Linear Regression (best RMSE value).
-- **Flask Web Application**: Created a user-friendly interface to input attributes and view predictions.
-- **Deployment**: Hosted the application on AWS using:
-  - **GitHub Actions** for CI/CD.
-  - **Elastic Beanstalk** and **CodePipeline** for deployment.
+This project involves developing an end-to-end application to predict a student's math score based on various factors. The application is designed to analyze the influence of demographic and educational attributes on academic performance and provide accurate predictions through a machine-learning model.
 
 ---
 
-## 🧑‍💻 **How It Works**
-1. Input student details such as:
-   - Gender
-   - Race/Ethnicity
-   - Parental Level of Education
-   - Type of Lunch Before Exam
-   - Test Preparation Course Status
-   - Reading and Writing Scores
-2. The application predicts the student's math score using a trained Linear Regression model.
+### **Key Features and Workflow**  
+1. **Exploratory Data Analysis (EDA):**  
+   - Conducted EDA to identify patterns and relationships in the data.  
+   - Visualized trends based on factors like gender, race/ethnicity, parental education, and test preparation.  
+
+2. **Feature Engineering:**  
+   - Applied one-hot encoding to transform categorical data into a usable format.  
+   - Used standard scaling to normalize numerical data for better model performance.  
+
+3. **Machine Learning:**  
+   - Evaluated multiple algorithms for predictive accuracy.  
+   - Performed hyperparameter tuning to optimize model performance.  
+   - Linear Regression was selected as the best-performing model with an **88% accuracy** and the lowest RMSE.  
+
+4. **Web Application:**  
+   - Built a simple and interactive user interface using Flask.  
+   - Allowed users to input attributes such as gender, reading scores, and test preparation status to get predictions.  
+
+5. **Deployment:**  
+   - Hosted the application on AWS for real-time accessibility.  
+   - Utilized GitHub Actions for CI/CD, Elastic Beanstalk for application hosting, and CodePipeline for automated deployment.  
 
 ---
 
-## 📂 **Project Structure**
-student-performance-prediction/ ├── app/ # Flask application files ├── data/ # Dataset for training and testing ├── notebooks/ # EDA and model development notebooks ├── models/ # Trained machine learning models ├── static/ # Static files for the web app (CSS, JS) ├── templates/ # HTML templates for Flask ├── requirements.txt # Python dependencies ├── Dockerfile # Docker configuration for deployment └── README.md # Project documentation
-
-
----
-
-## 🛠️ **Technologies Used**
-- **Programming Languages**: Python
-- **Libraries**: Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn, Flask
-- **Deployment**: AWS (Elastic Beanstalk, CodePipeline), GitHub Actions
-- **Version Control**: Git
+### **Objective**  
+The main goal of this project is to provide a data-driven approach to predict math scores and uncover insights into the factors affecting student performance, aiding educators and stakeholders in making informed decisions.  
 
 ---
 
-## 📈 **Key Results**
-- **Linear Regression** emerged as the best model with an RMSE value achieving 88% accuracy.
-- Significant insights into the factors influencing student performance were derived through EDA.
-
----
-
-## 💻 **Getting Started**
-### **Prerequisites**
-- Python 3.8+
-- AWS account
-- Docker (optional for containerized deployment)
-
-### **Installation**
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/student-performance-prediction.git
-   cd student-performance-prediction
-
+### **Technologies Used**  
+- **Programming:** Python  
+- **Libraries:** Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn, Flask  
+- **Deployment Tools:** AWS Elastic Beanstalk, GitHub Actions, CodePipeline  
